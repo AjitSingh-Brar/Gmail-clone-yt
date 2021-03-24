@@ -12,6 +12,7 @@ import InboxIcon from "@material-ui/icons/Inbox";
 import Section from "./Section";
 import PeopleIcon from "@material-ui/icons/People";
 import LocalOfferIcon from "@material-ui/icons/LocalOffer";
+import EmailRow from "./EmailRow";
 
 function EmailList() {
   return (
@@ -51,7 +52,14 @@ function EmailList() {
         <Section Icon={LocalOfferIcon} title="Promotions" color="green" />
       </div>
 
-      <div className="emailList__list"></div>
+      <div className="emailList__list">
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!"
+          description="This is test"
+          time="10pm"
+        />
+      </div>
     </div>
   );
 }
